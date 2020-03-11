@@ -1,0 +1,13 @@
+﻿@model MonitorMicroservice.Models.Hospital
+@{
+    ViewBag.Title = "Добавление больницы";
+}
+<form asp-action="create" asp-controller="hospital">
+    <div class="form-group">
+        <label asp-for="Name" class="control-label">Полное название</label>
+        <input type="text" asp-for="Name" class="form-control" />
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Отправить" class="btn btn-default" />
+    </div>
+</form>
