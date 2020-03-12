@@ -2,7 +2,7 @@
 
 namespace MonitorMicroservice.Migrations
 {
-    public partial class InitialCreate : Migration
+    public partial class addHospital : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -18,29 +18,12 @@ namespace MonitorMicroservice.Migrations
                 {
                     table.PrimaryKey("PK_Hospitals", x => x.Id);
                 });
-
-            migrationBuilder.CreateTable(
-                name: "Users",
-                columns: table => new
-                {
-                    Id = table.Column<int>(nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Name = table.Column<string>(nullable: true),
-                    Age = table.Column<int>(nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Users", x => x.Id);
-                });
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
                 name: "Hospitals");
-
-            migrationBuilder.DropTable(
-                name: "Users");
         }
     }
 }

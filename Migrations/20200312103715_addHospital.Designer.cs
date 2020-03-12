@@ -9,8 +9,8 @@ using MonitorMicroservice.Models;
 namespace MonitorMicroservice.Migrations
 {
     [DbContext(typeof(ApplicationContext))]
-    [Migration("20200311220914_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20200312103715_addHospital")]
+    partial class addHospital
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
