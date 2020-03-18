@@ -1,0 +1,143 @@
+﻿<!--<a asp-action="CreateBloodBio">Добавить биохимический анализ крови</a>
+<a asp-action="CreateBloodClynic">Добавить клинический анализ крови</a>
+<a asp-action="CreateBloodGroup">Добавить анализ группы крови</a>
+<a asp-action="CreateCoprogram">Добавить копрограмму</a>
+<a asp-action="CreateIFA">Добавить ИФА-диагностику</a>
+<a asp-action="CreateUrine">Добавить общий анализ мочи</a>-->
+
+
+@{
+    ViewBag.Title = "Все анализы";
+}
+
+@model MonitorMicroservice.Models.Analyzes.Analyse
+<a asp-action="CreateBloodBio">Добавить биохимический анализ крови</a>
+<table class="table">
+    <tr>
+        <th>ID анализа</th>
+        <th>ID пациента</th>
+        <th>Операции</th>
+    </tr>
+
+    @foreach (var item in Model.AnalyseBloodBio)
+    {
+        <tr>
+            <td>@item.Id</td>
+            <td>@item.PatientId</td>
+            <td>
+                <a asp-action="Details" asp-controller="Analyse" asp-route-id="@item.Id">Подробнее</a> |
+                <a asp-action="Edit" asp-controller="Analyse" asp-route-id="@item.Id">Изменить</a> |
+                <a asp-action="Delete" asp-controller="Analyse" asp-route-id="@item.Id">Удалить</a>
+            </td>
+        </tr>
+    }
+</table>
+
+<a asp-action="CreateBloodClynic">Добавить клинический анализ крови</a>
+<table class="table">
+    <tr>
+        <th>ID анализа</th>
+        <th>ID пациента</th>
+        <th>Операции</th>
+    </tr>
+
+    @foreach (var item in Model.AnalyseBloodClynic)
+    {
+        <tr>
+            <td>@item.Id</td>
+            <td>@item.PatientId</td>
+            <td>
+                <a asp-action="Details" asp-controller="Analyse" asp-route-id="@item.Id">Подробнее</a> |
+                <a asp-action="Edit" asp-controller="Analyse" asp-route-id="@item.Id">Изменить</a> |
+                <a asp-action="Delete" asp-controller="Analyse" asp-route-id="@item.Id">Удалить</a>
+            </td>
+        </tr>
+    }
+</table>
+
+<a asp-action="CreateBloodGroup">Добавить анализ группы крови</a>
+<table class="table">
+    <tr>
+        <th>ID анализа</th>
+        <th>ID пациента</th>
+        <th>Операции</th>
+    </tr>
+
+    @foreach (var item in Model.AnalyseBloodGroup)
+    {
+        <tr>
+            <td>@item.Id</td>
+            <td>@item.PatientId</td>
+            <td>
+                <a asp-action="Details" asp-controller="Analyse" asp-route-id="@item.Id">Подробнее</a> |
+                <a asp-action="Edit" asp-controller="Analyse" asp-route-id="@item.Id">Изменить</a> |
+                <a asp-action="Delete" asp-controller="Analyse" asp-route-id="@item.Id">Удалить</a>
+            </td>
+        </tr>
+    }
+</table>
+
+<a asp-action="CreateCoprogram">Добавить копрограмму</a>
+<table class="table">
+    <tr>
+        <th>ID анализа</th>
+        <th>ID пациента</th>
+        <th>Операции</th>
+    </tr>
+    @foreach (var item in Model.AnalyseCoprogram)
+    {
+        <tr>
+            <td>@item.Id</td>
+            <td>@item.PatientId</td>
+            <td>
+                <a asp-action="Details" asp-controller="Analyse" asp-route-id="@item.Id">Подробнее</a> |
+                <a asp-action="Edit" asp-controller="Analyse" asp-route-id="@item.Id">Изменить</a> |
+                <a asp-action="Delete" asp-controller="Analyse" asp-route-id="@item.Id">Удалить</a>
+            </td>
+        </tr>
+    }
+</table>
+
+<a asp-action="CreateIFA">Добавить ИФА-диагностику</a>
+<table class="table">
+    <tr>
+        <th>ID анализа</th>
+        <th>ID пациента</th>
+        <th>Операции</th>
+    </tr>
+
+    @foreach (var item in Model.AnalyseIFA)
+    {
+        <tr>
+            <td>@item.Id</td>
+            <td>@item.PatientId</td>
+            <td>
+                <a asp-action="Details" asp-controller="Analyse" asp-route-id="@item.Id">Подробнее</a> |
+                <a asp-action="Edit" asp-controller="Analyse" asp-route-id="@item.Id">Изменить</a> |
+                <a asp-action="Delete" asp-controller="Analyse" asp-route-id="@item.Id">Удалить</a>
+            </td>
+        </tr>
+    }
+</table>
+
+<a asp-action="CreateUrine">Добавить общий анализ мочи</a>
+<table class="table">
+    <tr>
+        <th>ID анализа</th>
+        <th>ID пациента</th>
+        <th>Операции</th>
+    </tr>
+
+    @foreach (var item in Model.AnalyseUrine)
+    {
+        <tr>
+            <td>@item.Id</td>
+            <td>@item.PatientId</td>
+            <td>
+                <a asp-action="Details" asp-controller="Analyse" asp-route-id="@item.Id">Подробнее</a> |
+                <a asp-action="Edit" asp-controller="Analyse" asp-route-id="@item.Id">Изменить</a> |
+                <a asp-action="Delete" asp-controller="Analyse" asp-route-id="@item.Id">Удалить</a>
+            </td>
+        </tr>
+    }
+</table>

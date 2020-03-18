@@ -147,3 +147,11 @@ C:\Users\fi777\OneDrive\Desktop\University\MonitorMicroservice\obj\Debug\netcore
 C:\Users\fi777\OneDrive\Desktop\University\MonitorMicroservice\obj\Debug\netcoreapp3.1\Razor\Views\Patient\Privacy.cshtml.g.cs
 C:\Users\fi777\OneDrive\Desktop\University\MonitorMicroservice\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
 C:\Users\fi777\OneDrive\Desktop\University\MonitorMicroservice\obj\Debug\netcoreapp3.1\MonitorMicroservice.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\fi777\OneDrive\Desktop\University\MonitorMicroservice\obj\Debug\netcoreapp3.1\MonitorMicroservice.csprojAssemblyReference.cache
+C:\Users\fi777\OneDrive\Desktop\University\MonitorMicroservice\obj\Debug\netcoreapp3.1\Razor\Views\Analyse\CreateBloodBio.cshtml.g.cs
+C:\Users\fi777\OneDrive\Desktop\University\MonitorMicroservice\obj\Debug\netcoreapp3.1\Razor\Views\Analyse\CreateBloodClynic.cshtml.g.cs
+C:\Users\fi777\OneDrive\Desktop\University\MonitorMicroservice\obj\Debug\netcoreapp3.1\Razor\Views\Analyse\CreateBloodGroup.cshtml.g.cs
+C:\Users\fi777\OneDrive\Desktop\University\MonitorMicroservice\obj\Debug\netcoreapp3.1\Razor\Views\Analyse\CreateIFA.cshtml.g.cs
+C:\Users\fi777\OneDrive\Desktop\University\MonitorMicroservice\obj\Debug\netcoreapp3.1\Razor\Views\Analyse\CreateUrine.cshtml.g.cs
+C:\Users\fi777\OneDrive\Desktop\University\MonitorMicroservice\obj\Debug\netcoreapp3.1\Razor\Views\Analyse\Index.cshtml.g.cs
+C:\Users\fi777\OneDrive\Desktop\University\MonitorMicroservice\obj\Debug\netcoreapp3.1\Razor\Views\Analyse\CreateCoprogram.cshtml.g.cs

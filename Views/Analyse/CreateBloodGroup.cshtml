@@ -1,0 +1,13 @@
+﻿@model MonitorMicroservice.Models.Analyzes.AnalyseBloodGroup
+@{
+    ViewBag.Title = "Добавление биохимичекого анализа крови";
+}
+<form asp-action="CreateBloodGroup" asp-controller="Analyse">
+    <div class="form-group">
+        <label asp-for="PatientId" class="control-label">ID пациента</label>
+        <input type="text" asp-for="PatientId" class="form-control" />
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Отправить" class="btn btn-default" />
+    </div>
+</form>
